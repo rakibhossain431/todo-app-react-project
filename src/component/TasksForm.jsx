@@ -10,10 +10,11 @@ const TasksForm = ( {tasks, setTodoTasks} ) => {
         e.preventDefault()
         const item = {
             id:Date.now(),
-            task:task,
+            task,
             isCompleted:false
         }
-        setTodoTasks([ ...tasks, item])
+        setTodoTasks((prevState) => [item, ...prevState])
+        e.target.reset(item)
         
      }
   return (

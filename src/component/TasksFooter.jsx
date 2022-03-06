@@ -1,12 +1,10 @@
 import React from 'react'
+import Task from './Task'
 
-const TasksFooter = () => {
+const TasksFooter = ({todoTasks}) => {
   return (
-    <div className="todo-items-wrapper">
-    <ul className="todo-items"></ul>
-
-      
     
+      
          <div className="todo-footer">
          <div className="left-items">5 Items left</div>
             <ul className="footer-menus">
@@ -15,8 +13,9 @@ const TasksFooter = () => {
              <li className="completed">Completed</li>
              </ul>
          <button className="clear-completed">Clear Completed</button>
+         <button className="clear-completed">reset </button>
         </div>
-        </div>  
+         
     
   )
 }

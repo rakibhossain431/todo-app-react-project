@@ -174,3 +174,15 @@ header {
   border: 0;
   color: var(--light-grayish-blue2);
 }
+.edit img{
+  filter: brightness(0) invert(1);
+  width: 20px ;
+  height: 20px;
+  margin-right: 1rem;
+}
+.delete img{
+  width: 20px ;
+  height: 20px;
+  filter: brightness(0) invert(1);
+
+}
